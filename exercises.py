@@ -38,3 +38,27 @@ dictionary["Erasmo"]=newage
 #print the dictrionary whit the new value
 print(dictionary)
 ###########################################################################
+print("###########################################################################")
+#4-A function named operation, that receives 3 params.
+
+#create  the function
+def operation(operando, firstNumber, secondNumber):
+#create a if's for each of the cases
+    if operando == "+":
+        result = firstNumber + secondNumber
+    elif operando == "-":
+        result = firstNumber - secondNumber
+    elif operando == "*":
+        result = firstNumber * secondNumber
+    elif operando == "/":
+        result = firstNumber / secondNumber
+    return result
+#ask what operation want to perform and the values
+operando = input("enter the operando (+, -, *, /): ")
+number1 = int(input("enter the first number: "))
+number2 = int(input("enter the second number: "))
+#cal the fucntion and print the results
+result_operation = operation(operando, number1, number2)
+print("Resul of the operation:", result_operation)
+
+
