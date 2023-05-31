@@ -9,3 +9,4 @@ names.append(newName)
 #in the loop "for" we print the list with all the elements
 for name in names:
     print(name)
+#tested the commits xd
