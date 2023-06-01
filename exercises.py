@@ -42,23 +42,28 @@ print("#########################################################################
 #4-A function named operation, that receives 3 params.
 
 #create  the function
-def operation(operando, firstNumber, secondNumber):
-#create a if's for each of the cases
-    if operando == "+":
+def operation(sign, firstNumber, secondNumber):
+
+    # create if statements for each of the cases
+    if sign == "1":
         result = firstNumber + secondNumber
-    elif operando == "-":
+    elif sign == "2":
         result = firstNumber - secondNumber
-    elif operando == "*":
+    elif sign == "3":
         result = firstNumber * secondNumber
-    elif operando == "/":
+    elif sign == "4":
         result = firstNumber / secondNumber
+    else:
+        result = None
+
     return result
+
 #ask what operation want to perform and the values
-operando = input("enter the operando (+, -, *, /): ")
+sign = input("what operation do you want to do 1-addition, 2-subtraction, 3-multiplication, 4-division ")
 number1 = int(input("enter the first number: "))
 number2 = int(input("enter the second number: "))
-#cal the fucntion and print the results
-result_operation = operation(operando, number1, number2)
+#call the function and print the results
+result_operation = operation(sign, number1, number2)
 print("Resul of the operation:", result_operation)
 
 
